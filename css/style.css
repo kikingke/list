@@ -1,0 +1,17 @@
+html,body{
+	margin: 0;
+	padding: 0;
+}
+
+.strike{
+	position: relative;
+}
+
+.strike::after{
+	border-bottom: 3px solid red;
+	content:"";
+	left:0;
+	position: absolute;
+	right: 0;
+	top: 48%;
+}

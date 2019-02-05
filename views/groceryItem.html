@@ -1,0 +1,13 @@
+                <button type="button" class="btn btn-sm btn-success pull-left" ng-click="markCompleted(item)">
+					<i class="fa" aria-hidden="true" ng-class="item.completed ? 'fa-check-square' : 'fa-check'"></i>
+				</button>
+				<span ng-class="{strike:item.completed}">{{item.itemName | uppercase}}</span>
+				
+				<div class="btn-group pull-right" role="group" aria-label="Basic example">
+					 <a href="#!/addItem/edit/{{item.id}}" class="btn btn-sm btn-outline-primary pull-right">
+						<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+					 </a>
+					 <a href="#" class="btn btn-sm btn-outline-danger pull-right" ng-click="removeItem(item)">
+						<i class="fa fa-minus-circle" aria-hidden="true"></i>
+				     </a>
+				</div>
